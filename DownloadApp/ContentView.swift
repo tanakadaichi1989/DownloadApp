@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var progress:Int = 0
+    @State private var canButtonTap:Bool = true
+    
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -20,14 +22,23 @@ struct ContentView: View {
             Button(action: tapButton,label: {
                 Text("Start")
             })
+            .disabled(!canButtonTap)
             .buttonStyle(.borderedProminent)
             Spacer()
         }
     }
     
     private func tapButton(){
+        self.canButtonTap = false
         DownloadManager.startDownload { progress in
             self.progress = progress
+            self.toggleButton()
+        }
+    }
+    
+    private func toggleButton(){
+        if progress == 100 {
+            canButtonTap = true
         }
     }
 }

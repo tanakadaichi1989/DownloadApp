@@ -67,8 +67,6 @@ struct ContentView: View {
     @State private var progress:Int = 0
     @State private var canButtonTap:Bool = true
     
-    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
-    
     var body: some View {
         VStack {
             Spacer()

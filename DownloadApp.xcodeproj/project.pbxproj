@@ -14,6 +14,7 @@
 		A17FB07D27E4130A004AF9C5 /* DownloadAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17FB07C27E4130A004AF9C5 /* DownloadAppTests.swift */; };
 		A17FB08727E4130A004AF9C5 /* DownloadAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17FB08627E4130A004AF9C5 /* DownloadAppUITests.swift */; };
 		A17FB08927E4130A004AF9C5 /* DownloadAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17FB08827E4130A004AF9C5 /* DownloadAppUITestsLaunchTests.swift */; };
+		A17FB09627E41661004AF9C5 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17FB09527E41661004AF9C5 /* DownloadManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A17FB08227E4130A004AF9C5 /* DownloadAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17FB08627E4130A004AF9C5 /* DownloadAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAppUITests.swift; sourceTree = "<group>"; };
 		A17FB08827E4130A004AF9C5 /* DownloadAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A17FB09527E41661004AF9C5 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				A17FB06B27E41307004AF9C5 /* DownloadAppApp.swift */,
 				A17FB06D27E41307004AF9C5 /* ContentView.swift */,
+				A17FB09527E41661004AF9C5 /* DownloadManager.swift */,
 				A17FB06F27E4130A004AF9C5 /* Assets.xcassets */,
 				A17FB07127E4130A004AF9C5 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A17FB06E27E41307004AF9C5 /* ContentView.swift in Sources */,
+				A17FB09627E41661004AF9C5 /* DownloadManager.swift in Sources */,
 				A17FB06C27E41307004AF9C5 /* DownloadAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
